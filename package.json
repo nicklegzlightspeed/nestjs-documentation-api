@@ -1,0 +1,14 @@
+{
+  "name": "nestjs-docusaurus-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "spec:generate": "cd backend && yarn ts-node src/generate-spec.ts",
+    "docs:generate": "cd docusaurus && yarn docusaurus gen-api-docs apiDocs",
+    "start": "yarn spec:generate && yarn docs:generate && cd docusaurus && yarn start",
+    "build": "yarn spec:generate && yarn docs:generate && cd docusaurus && yarn build"
+  },
+  "dependencies": {
+    "docusaurus-theme-openapi-docs": "^4.5.1"
+  }
+}

@@ -1,0 +1,71 @@
+---
+id: users-controller-create
+title: "Create a new user"
+description: "Create a new user"
+sidebar_label: "Create a new user"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVEtvGjEQ/ivWXHpxgVQ97al59JBKVaM0Oa1QNXgH1tRrO34kQWj/ezU2JKSgKodyAWZnxt/LuwXnKWDSzl530MB9pBAvnU3BGUPhlwqEiUCCx4ADJQoRmnYuIdBDppguXLeBZlv+6kAdNClkkqCcTWQTP0LvjVbliOk6Osu1qHoakH+ljSdowC3WpBKfExhQ0hT5qcWBDrpiCtquQEJHUQXteSc0cNeTWGZjBLcLtxSpJ5EjhQlIoGccvOHpb2hJXDmCUQINqM37NvOiD1GUCYFdFyjGt4vXaGnSOfqyK02UG/iQ4Mw70XPnEXCbB2hawG7QFiRwHeY8vcRsEjS1Mo7yQP22SrYnuMMwl5B0Klgvi6Fs81VyMI51PHpnY5X80+yMv07rIHqMYkFkRcxKUYws+0bUlHSM+v8YP74Cvq8kGefn2ewY2gV24raGcVLESLjijNYoV8EO+6sAAoWlp8IJJAyUesfx9y4WLJh6aGCKXk9zWSMhUnh8ST/TuX29AV/3Udgn9jVrL1E7nZJ9SHZeStB26Yo8B/TFd7S4ooFsEuc310cJOr+5Fp1TmRuK3GLpQsnS39NMQitio5hMHT+bzHbGoWLjWEQWYkB7wOiUbm9gvFia6DlNvUFtmVAO5Z5VSVtAr3dZLt70LHjTwna7wEj3wYwjlx8yhU2V+hGDxgVr0c5HCT1hRwGadgu/acO4auA+3vHh3G4ygzgK3yj3E+dKkU//7J0fZOLmx887kLDYvekG1/FMwCc2D5+gAZDgigjlApXaFgzaVcZVeT+Unfz5A3MX2rM=
+sidebar_class_name: "post api-method"
+info_path: ./docs/api/user-management-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/users"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"name":{"type":"string","description":"The full name of the user.","example":"Jane Doe"},"email":{"type":"string","description":"The user's email address.","example":"jane.doe@example.com"},"role":{"type":"string","description":"The role of the user.","enum":["admin","user"],"default":"user"}},"required":["name","email","role"],"title":"CreateUserDto"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"The user has been successfully created.","content":{"application/json":{"schema":{"type":"object","properties":{},"title":"User"}}}},"400":{"description":"Bad Request."}}}
+>
+  
+</StatusCodes>
+
+
+      

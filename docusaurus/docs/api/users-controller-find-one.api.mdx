@@ -1,0 +1,71 @@
+---
+id: users-controller-find-one
+title: "Get a user by ID"
+description: "Get a user by ID"
+sidebar_label: "Get a user by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJxtkkGL2zAQhf+KeKcWRJKWPfkW2mXJoXQpu6cQiiJNYm1tSSuNlwaj/17GDmGb7Mm2Ro/33ucZERNlwz6GjUOD50K5fIuBc+w6yr8PPrifgaCRTDY9MeWCZjsimJ7QwDtoZHodfCaHhvNAGj6gQTLcQqPYlnqDZgSfkigKZx+OqHUnwpJiKFRk/nW1koejYrNPkggNnlpShzgEpzLZmMXNxsAUWO6alDpvp/TLlyKC8dYw7l/IsjTI0pX9ZFc12HNH586otVaNu9XdbQaZqxB5DrKAXGRzFA4zL+z0leSBWBk1iHB/Upvv0OiJ2yiIjzSFETwNlib5pdwry9G7KsAov82Qd0LyEKcq76KqHyaYI/UUWK0fN7j2Xj9ulIt2kAsTGnWIWXFL6lotVt7SAhpiOcu/LFZnyMYKZGmbYuHeTHjP//2Dgv+luNBn+svL1BkfUDWG3MlsLr+FSR4aU31oNN4JyTYWluE47k2h59zVKsevA+XTTOXNZG/2AmQ7wvki7w7NwXSFbnJc1gWffp339LOC/jjf+dCEkzAx3SBf0PhDp3nZ665qtGQc5cl9HqytpcTvJDeLKdt+2YCH+yfU+g+hRCxM
+sidebar_class_name: "get api-method"
+info_path: ./docs/api/user-management-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a user by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/users/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a user by ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","required":true,"in":"path","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"The found record","content":{"application/json":{"schema":{"type":"object","properties":{},"title":"User"}}}},"404":{"description":"User not found."}}}
+>
+  
+</StatusCodes>
+
+
+      
